@@ -621,7 +621,11 @@ main {
     }
 
     #foot #secao2 #part1 img {
-        width: 35vw;
+        width: 30vw;
+    }
+
+    #foot #secao2 #part1 p {
+        font-size: 2.5vw;
     }
 
     #foot #secao2 #part2 {
@@ -647,10 +651,9 @@ main {
     }
 
     #foot #secao2 #part3 a {
-        font-size: 3vw;
+        font-size: 2.5vw;
         margin-bottom: 5.5vw;
         margin-top: 0px;
         margin-left: 60px;
     }
-    
 }
