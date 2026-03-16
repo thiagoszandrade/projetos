@@ -358,22 +358,44 @@ main {
 }
 
 #secao2 #part1 a {
-    color: black;
+    color: var(--cor2);
     text-decoration: underline;
+    font-weight: bold;
 }
 
 #secao2 #part2 {
-    width: 40vw;
+    width: 35vw;
     border: 1px solid black;
-    padding: 20px 30px;
-    font-size: 3vw;
+    padding: 20px 7vw;
+    
 }
 
 #secao2 #part2 p {
+    font-size: 2vw;
+}
 
+#secao2 #part2 input {
+    border: 0px;
+    margin: 3vw 0px;
+    padding: 20px 30px;
+    font-size: 1.7vw;
+}
+
+#secao2 #part2 a {
+    display: inline-flex;
+    border: 2px solid var(--cor2);
+    border-radius: 50px;
+    color: var(--cor2);
+    padding: 20px;
+    font-size: 1.7vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 #secao2 #part3 {
+    border: 1px solid;
+    margin-left: 5vw;
     display: flex;
     flex-direction: column;
 }
