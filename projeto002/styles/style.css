@@ -49,6 +49,7 @@ header {
     background: transparent;
     backdrop-filter: blur(15px);
     align-items: center;
+    z-index: 1000;
 }
 
 header.ativo {
@@ -229,7 +230,7 @@ header.ativo {
     margin: 1.2vw 0px;
 }
 
-#sobre #descricao-direita .subtitulo {
+.subtitulo {
     color: rgb(var(--cor1));
     font-weight: bolder;
     font-size: 1.3vw;
@@ -314,4 +315,76 @@ header.ativo {
     to {
         transform: translateX(-50%);
     }
+}
+
+#contato #contato-container {
+    padding: 7vw 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#contato #contato-info h2 {
+    color: rgb(var(--cor4));
+    font-size: 3vw;
+    font-weight: bolder;
+    margin: 1.3vw 0px;
+}
+
+#contato #contato-info p {
+    color: rgb(80, 80, 80);
+    font-size: 1.3vw;
+    text-align: justify;
+    letter-spacing: 1px;
+    margin: 1.2vw 0px;
+}
+
+#contato #contato-info #atendimento .item-contato {
+    box-shadow: 1px 0px 10px rgb(143, 143, 143);
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    margin: 2vw 0;
+    padding: 1.4vw;
+}
+
+#contato #contato-info #atendimento .item-contato h3 {
+    color: rgb(var(--cor4));
+}
+
+#contato #contato-info #atendimento .item-contato p {
+    margin: 0px;
+}
+
+#contato #contato-info #atendimento i {
+    background: color-mix(in srgb, var(--cor5), transparent 60%);
+    color: rgb(var(--cor1));
+    border-radius: 100px;
+    padding: 1vw;
+    margin: 1vw;
+    font-size: 1.6vw;
+}
+
+#contato #social-link .social-icon {
+    background-color: rgb(var(--cor1));
+    border-radius: 100px;
+    font-size: 1.5vw;
+    padding: 1.2vw;
+    margin-right: 1.7vw;
+}
+
+#contato #contato-form {
+    box-shadow: 1px 0px 10px rgb(143, 143, 143);
+    display: flex;
+    margin-left: 4vw;
+    padding: 2vw;
+
+}
+
+#contato #contato-form .grupo-input {
+    margin: 2vw 0px;
+}
+
+#contato #contato-form .grupo-input label {
+    color: rgb(var(--cor4));
 }
