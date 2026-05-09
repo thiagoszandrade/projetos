@@ -15,7 +15,7 @@ roxo escuro: #30135c   48, 19, 92
     --cor2: 47, 75, 195; /* azul */
     --cor3: 66, 199, 238; /* ciano */
     --cor4: 48, 19, 92; /* roxo escuro */
-    --cor5: rgb(170, 170, 170);
+    --cor5: rgb(202, 202, 202);
 }
 
 * {
@@ -33,7 +33,6 @@ html {
 }
 
 body {
-    
     color: white;
     position: relative;
     max-width: 100%;
@@ -177,10 +176,142 @@ header.ativo {
     background-color: rgb(var(--cor4));
     border-radius: 2vw;
     padding: 2vw;
+    height: 25vw;
+    margin: auto;
 }
 
-#sobre #sobre-quadrado #sobre-logomarca {
+#sobre #sobre-descricao p {
+    color: var(--cor5);
+    border-left: 3px solid rgb(var(--cor3));
+    padding-left: 1.5vw;
+    margin-left: 2vw;
+    font-size: 1.5vw;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+#sobre #sobre-diretoria {
+    display: flex;
+    align-items: center;    
+}
+
+#sobre #sobre-diretoria #diretoria-foto {
+    background-image: linear-gradient(to right, rgb(var(--cor3)), rgb(var(--cor2)));
+    border-radius: 100px;
+    display: block;
+    width: 4vw;
+    height: 4vw;   
+    margin: 2vw 0px 1vw 2vw; 
+}
+
+#sobre #sobre-diretoria #diretoria-descricao {
+    margin-left: 1.5vw;
+}
+
+#sobre #descricao-direita {
+    padding: 0px 4vw;
+}
+
+#sobre #descricao-direita h2 {
+    color: rgb(var(--cor4));
+    font-size: 3.5vw;
+    font-weight: bolder;
+    margin: 1.3vw 0px;
+}
+
+#sobre #descricao-direita p {
+    color: rgb(80, 80, 80);
+    font-size: 1.3vw;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    margin: 1.2vw 0px;
+}
+
+#sobre #descricao-direita .subtitulo {
+    color: rgb(var(--cor1));
+    font-weight: bolder;
+    font-size: 1.3vw;
+}
+
+#sobre #descricao-direita .grid-valores {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+    padding: 2vw 0px;
+}
+
+#sobre #descricao-direita .grid-valores i {
+    color: rgb(var(--cor4));
+}
+
+#sobre #descricao-direita .grid-valores .valor-item {
     display: flex;
 }
 
-#sobre #sobre-quadrado #sobre-logomarca #
+#sobre #descricao-direita .grid-valores .icon {
+    background: color-mix(in srgb, var(--cor5), transparent 60%);
+    border-radius: 1.2vw;
+    display: inline-block;
+    width: 1.2vw;
+    height: 1.2vw;
+    padding: 1.2vw;
+    margin-right: 1.3vw;
+    font-size: 1.2vw;
+}
+
+#sobre #descricao-direita .grid-valores .texto-valor h3 {
+    color: rgb(var(--cor4));
+    font-size: 1.5vw;
+}
+
+#sobre #descricao-direita .grid-valores .texto-valor p {
+    letter-spacing: 0px;
+    line-height: 1em;
+    margin-top: 0.5vw;
+    font-size: 1.2vw;
+}
+
+#patrocinio {
+    background: radial-gradient(circle at top left, rgba(255,255,255,0.1), transparent 40%), linear-gradient(135deg, rgb(var(--cor4)), rgb(var(--cor1)), rgb(var(--cor2)));
+    text-align: center;
+    padding: 3vw 0px;
+}
+
+.marquee-container {
+    width: 100vw;
+    overflow: hidden;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-loop 20s linear infinite;
+}
+
+.logo-item {
+    width: 200px;
+    margin: 0 80px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.logo-item img {
+    height: 8vw;
+    object-fit: contain;
+}
+
+@keyframes scroll-loop {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
