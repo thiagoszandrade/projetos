@@ -86,6 +86,7 @@ body {
 }
 
 header {
+    display: inline-flex;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -94,6 +95,7 @@ header {
     transition: .3s;
     background: transparent;
     backdrop-filter: blur(15px);
+    align-items: center;
 }
 
 header.ativo {
@@ -102,15 +104,40 @@ header.ativo {
     height: 6vw;
 }
 
+#empresa {
+    align-items: center;
+}
+
+#empresa a {
+    display: flex;
+    padding: 2vw;
+    align-items: center;
+}
+
+#empresa p {
+    font-size: 1.5vw;
+}
+
+#empresa #empresa-logo {
+    background-image: linear-gradient(to right, rgb(var(--cor3)), rgb(var(--cor2)));
+    border-radius: 1.3vw;
+    display: block;
+    padding: 1.5vw;
+    align-items: center;
+    font-size: 2vw;
+    font-weight: bolder;
+    margin-right: 1.5vw;
+}
+
 #home {
-    display: inline-flex;
+    display: flex;
     padding: 1vw 0px;
-    transform: translate(50%);
     width: 50%;
+    margin-left: auto;
+    gap: 2vw;
 }
 
 #home a {
-    margin: auto;
     padding: 10px 20px;
     border-radius: 10px;
     font-weight: bold;
@@ -118,8 +145,18 @@ header.ativo {
 }
 
 #home a:hover {
-    background-color: rgb(var(--cor2), 0.4);
+    color: rgb(var(--cor3));
     transition: .5s;
+}
+
+#home #home-fc {
+    background-image: linear-gradient(to right, rgb(var(--cor3)), rgb(var(--cor2)));
+    border-radius: 100px;
+}
+
+#home #home-fc:hover {
+    color: white;
+    box-shadow: 0px 4px 10px rgb(var(--cor3), 0.5);
 }
 
 #inicio {
