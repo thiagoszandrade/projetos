@@ -363,6 +363,7 @@ header.ativo {
 
 #contato #contato-info #atendimento .item-contato h3 {
     color: rgb(var(--cor4));
+    font-size: 1.4vw;
 }
 
 #contato #contato-info #atendimento .item-contato p {
