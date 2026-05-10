@@ -285,7 +285,19 @@ header.ativo {
     overflow: hidden;
     padding: 20px 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 40px;
+}
+
+.marquee-container h2 {
+    font-size: 2vw;
+    color: white;
+    text-shadow: 2px 0px 15px rgb(var(--cor3));
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bolder;
+
 }
 
 .marquee-track {
@@ -322,6 +334,10 @@ header.ativo {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+#contato #contato-info {
+
 }
 
 #contato #contato-info h2 {
@@ -366,7 +382,7 @@ header.ativo {
 }
 
 #contato #social-link .social-icon {
-    background-color: rgb(var(--cor1));
+    background-color: rgb(var(--cor4));
     border-radius: 100px;
     font-size: 1.5vw;
     padding: 1.2vw;
@@ -375,6 +391,7 @@ header.ativo {
 
 #contato #contato-form {
     box-shadow: 1px 0px 10px rgb(143, 143, 143);
+    border-radius: 1.3vw;
     display: flex;
     margin-left: 4vw;
     padding: 2vw;
@@ -383,8 +400,69 @@ header.ativo {
 
 #contato #contato-form .grupo-input {
     margin: 2vw 0px;
+    display: grid;
 }
 
 #contato #contato-form .grupo-input label {
     color: rgb(var(--cor4));
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+
+#contato #contato-form .grupo-input input {
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 1vw;
+    padding: 1vw;
+    margin: 1vw 0;
+    width: 35vw;
+}
+
+#contato #contato-form .grupo-input textarea {
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 1vw;
+    padding: 1vw;
+    margin: 1vw 0;
+    resize: none;
+    min-width: 35vw;
+    max-height: 10vw;
+}
+
+#contato #contato-form .grupo-input input, textarea::placeholder {
+    font-size: 1vw;
+}
+
+#contato #contato-form button {
+    background-image: linear-gradient(to right, rgb(var(--cor3)), rgb(var(--cor2)));
+    display: inline-flex;
+    border: none;
+    border-radius: 1vw;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    width: 35vw;
+    justify-content: center;
+    padding: 1vw;
+}
+
+#contato #contato-form button:hover {
+    cursor: pointer;
+}
+
+footer {
+    background-color: rgb(var(--cor4));
+    padding: 1vw;
+    font-size: 1vw;
+    align-content: center;
+    display: flex;
+}
+
+footer #copy {
+    border-top: 1px solid rgba(128, 128, 128, 0.466);
+    margin-top: 2vw;
+    padding: 1vw;
+    color: gray;
+}
+
+footer #termo {
+    justify-content: end;
 }
