@@ -107,6 +107,7 @@ header.ativo {
 #home #home-fc:hover {
     color: white;
     box-shadow: 0px 4px 10px rgb(var(--cor3), 0.5);
+    transition: 0.5s;
 }
 
 #inicio {
@@ -336,10 +337,6 @@ header.ativo {
     align-items: flex-start;
 }
 
-#contato #contato-info {
-
-}
-
 #contato #contato-info h2 {
     color: rgb(var(--cor4));
     font-size: 3vw;
@@ -446,6 +443,9 @@ header.ativo {
 
 #contato #contato-form button:hover {
     cursor: pointer;
+    background-image: linear-gradient(to right, rgb(var(--cor3), 0.8), rgb(var(--cor4), 0.8));
+    box-shadow: 0px 0px 10px rgb(var(--cor3), 0.7);
+    transition: 0.5s;
 }
 
 footer {
