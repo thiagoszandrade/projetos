@@ -450,19 +450,34 @@ header.ativo {
 
 footer {
     background-color: rgb(var(--cor4));
-    padding: 1vw;
+    padding-top: 2vw;
+}
+
+#foot {
+    border-top: 1px solid rgba(128, 128, 128, 0.438);
     font-size: 1vw;
-    align-content: center;
+    justify-content: space-between;
     display: flex;
+    margin: 0 3vw;
 }
 
 footer #copy {
-    border-top: 1px solid rgba(128, 128, 128, 0.466);
-    margin-top: 2vw;
+    
+    margin-top: 1vw;
     padding: 1vw;
     color: gray;
 }
 
 footer #termo {
-    justify-content: end;
+    padding: 2vw;
+}
+
+footer #termo a {
+    color: gray;
+    padding: 2vw;
+}
+
+
+footer #termo a:hover {
+    color: rgb(var(--cor3));
 }
