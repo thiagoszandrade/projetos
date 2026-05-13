@@ -104,6 +104,7 @@
     }
 
     #inicio {
+        background: radial-gradient(circle at top left, rgba(255,255,255,0.1), transparent 40%), linear-gradient(250deg, rgb(var(--cor4)), rgb(var(--cor1)), rgb(var(--cor2)));
         padding: 24vw 0 10vw;
     }
 

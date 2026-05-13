@@ -163,6 +163,7 @@ header.ativo {
 
 #inicio #inicio-button #econtato:hover {
     background-image: linear-gradient(to right, rgb(var(--cor3)), rgb(var(--cor2)));
+    color: white;
     transition: .5s;
 }
 
