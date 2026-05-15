@@ -284,13 +284,19 @@
     }
 
     #contato #social-link {
-        margin-top: 4vw;
+        display: flex;
+        padding: 3vw 0;
+        margin: auto;
+        justify-content: space-around;
+        
     }
 
     #contato #social-link .social-icon {
-        font-size: 4vw;
+        font-size: 5vw;
         padding: 3vw;
+        width: 100%;
         margin-right: 3vw;
+        text-align: center;
     }
 
     #contato #contato-form {
